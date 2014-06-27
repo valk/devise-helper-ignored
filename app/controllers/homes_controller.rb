@@ -21,7 +21,7 @@ class HomesController < ApplicationController
 
   # GET /homes/1/edit
   def edit
-  endu
+  end
 
   # POST /homes
   # POST /homes.json
