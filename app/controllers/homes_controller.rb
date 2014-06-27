@@ -15,8 +15,7 @@ class HomesController < ApplicationController
   end
 
   # GET /homes/new
-  def newbefore_action :authenticate_user!
-
+  def new
     @home = Home.new
   end
 
