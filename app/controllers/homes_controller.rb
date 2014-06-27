@@ -1,5 +1,7 @@
 class HomesController < ApplicationController
   before_action :set_home, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
 
   # GET /homes
   # GET /homes.json
@@ -13,13 +15,14 @@ class HomesController < ApplicationController
   end
 
   # GET /homes/new
-  def new
+  def newbefore_action :authenticate_user!
+
     @home = Home.new
   end
 
   # GET /homes/1/edit
   def edit
-  end
+  endu
 
   # POST /homes
   # POST /homes.json
